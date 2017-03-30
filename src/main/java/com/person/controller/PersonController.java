@@ -1,7 +1,7 @@
-package com.controller;
+package com.person.controller;
 
-import com.dao.PersonDao;
-import com.domain.Person;
+import com.person.dao.PersonDao;
+import com.person.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

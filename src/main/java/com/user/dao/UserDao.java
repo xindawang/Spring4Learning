@@ -1,6 +1,6 @@
-package com.dao;
+package com.user.dao;
 
-import com.domain.User;
+import com.user.domain.User;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 

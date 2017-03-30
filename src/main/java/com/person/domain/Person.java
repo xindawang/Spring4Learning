@@ -1,4 +1,4 @@
-package com.domain;
+package com.person.domain;
 
 /**
  * Created by ACER on 2017/3/30.

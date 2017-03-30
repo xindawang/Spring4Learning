@@ -1,10 +1,8 @@
-package com.dao;
+package com.person.dao;
 
-import com.domain.Person;
+import com.person.domain.Person;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-
-import javax.annotation.Resources;
 
 /**
  * Created by ACER on 2017/3/30.
