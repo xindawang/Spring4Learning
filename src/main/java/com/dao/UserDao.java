@@ -1,6 +1,6 @@
-package com.domain;
+package com.dao;
 
-import com.service.User;
+import com.domain.User;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -14,4 +14,7 @@ public interface UserDao {
 
     @Select("select * from user_info where name=#{name} limit 1")
     User getOneUser(String name);
+
+    @Select("select * from user_info where age=#{age}limit 1")
+    User getOneAge(String age);
 }
