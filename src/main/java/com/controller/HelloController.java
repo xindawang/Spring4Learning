@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * Created by zhangpeng on 16-3-22.
- */
+
 @Controller
 @RequestMapping("/test")
 public class HelloController {
