@@ -5,3 +5,4 @@
 ##FIRST VERSION
 #####http get 请求servlet回应
 #####数据库连接实现
+#####测试数据库新建表，并逐层重建连接

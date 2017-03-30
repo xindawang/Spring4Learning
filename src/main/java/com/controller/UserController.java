@@ -14,19 +14,16 @@ import org.springframework.web.servlet.ModelAndView;
  */
 // 声明为controller控制器，捕获请求并处理请求
 @Controller
-@RequestMapping("/dbopt")
+@RequestMapping("/usr")
 public class UserController {
 
     //    注入UserDao
     @Autowired
     UserDao userDao;
 
-    //    捕获 /hello 请求，利用hello(Model model) 处理请求，并返回‘hello’，交给Thymeleaf 处理
-//    hello 对应html文件名。model 作为信息的载体，封装各类变量、对象
     @RequestMapping("/getName")
-    public ModelAndView hello(@RequestParam("name") String name, ModelMap model) {
+    public ModelAndView getName(@RequestParam("name") String name, ModelMap model) {
 
-//        获取XiaoMing的相关信息
         User user = userDao.getOneUser(name);
 
         model.put("name", user.getName());
@@ -38,7 +35,6 @@ public class UserController {
     @RequestMapping("/getAge")
     public ModelAndView getAge(@RequestParam("age") String age, ModelMap model) {
 
-//        获取XiaoMing的相关信息
         User user = userDao.getOneAge(age);
 
         model.put("name", user.getName());
