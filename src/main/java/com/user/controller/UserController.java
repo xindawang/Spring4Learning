@@ -43,4 +43,25 @@ public class UserController {
 
         return new ModelAndView("userInfo");
     }
+
+    @RequestMapping("/insUsr")
+    public ModelAndView insUsr(@RequestParam("name") String name,@RequestParam("age") String age){
+
+        userService.insUsr(name,age);
+        return new ModelAndView("userInfo");
+    }
+
+    @RequestMapping("/updUsr")
+    public ModelAndView updUsr(@RequestParam("name") String name,@RequestParam("age") String age){
+
+        userService.updUsr(name,age);
+        return new ModelAndView("userInfo");
+    }
+
+    @RequestMapping("/delUsr")
+    public ModelAndView delUsr(@RequestParam("name") String name){
+
+        userService.delUsr(name);
+        return new ModelAndView("userInfo");
+    }
 }

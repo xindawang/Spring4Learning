@@ -36,4 +36,22 @@ public class UserService {
 
         return model;
     }
+
+    public void insUsr(String name, String age){
+        User user = new User();
+        user.setName(name);
+        user.setAge(Integer.valueOf(age));
+        userDao.insertOne(user);
+    }
+
+    public void updUsr(String name, String age) {
+        User user = new User();
+        user.setName(name);
+        user.setAge(Integer.valueOf(age));
+        userDao.updateOne(user);
+    }
+
+    public void delUsr(String name) {
+        userDao.deleteOne(name);
+    }
 }
