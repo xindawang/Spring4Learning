@@ -13,6 +13,11 @@ public class HomeController {
 
 	@RequestMapping(value="/")
 	public ModelAndView test(HttpServletResponse response) throws IOException{
-		return new ModelAndView("home");
+//		return new ModelAndView("learning/loginForm");
+//		return new ModelAndView("learning/dashboard");
+//		return new ModelAndView("learning/hello");
+//		return new ModelAndView("learning/flatui");
+//		return new ModelAndView("learning/slideToggle");
+		return new ModelAndView("learning/winter");//almost succeed, js excluded
 	}
 }
